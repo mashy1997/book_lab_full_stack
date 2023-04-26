@@ -20,4 +20,9 @@
 
     <input type="submit" value="Add Book">
 </form>
+
+{% for book in all_books %}
+<p>{{ book.title }} by {{ book.author.name }}</p>
+{% endfor %}
+
 {% endblock %}

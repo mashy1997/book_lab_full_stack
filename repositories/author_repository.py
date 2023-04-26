@@ -36,7 +36,7 @@ def select(id):
     # if len(results) > 0 
     if results:
         result = results[0]
-        authors = Author(result['name'], result['id'] )
+        author = Author(result['name'], result['id'] )
     return author
 
 
